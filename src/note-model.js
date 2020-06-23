@@ -1,12 +1,11 @@
 (function(exports) {
   function Note() {
-    this.defualext = "Cool";
+    this.text = "My favourite language is JavaScript";
   };
 
-  Note.prototype.text = "My favourite language is JavaScript";
 
-  Note.prototype.printtext = function(){
-    console.log(Note.addtext)
+  Note.prototype.print = function(){
+    return this.text;
   }
 
   exports.Note = Note;
