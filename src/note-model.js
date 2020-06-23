@@ -1,7 +1,13 @@
 (function(exports) {
-  function Circle() {
-    this.radius = 10;
+  function Note() {
+    this.defualext = "Cool";
   };
 
-  exports.Circle = Circle;
+  Note.prototype.text = "My favourite language is JavaScript";
+
+  Note.prototype.printtext = function(){
+    console.log(Note.addtext)
+  }
+
+  exports.Note = Note;
 })(this);
