@@ -1,23 +1,16 @@
-(function(exports) {
-  function NoteList() {
+(function (exports) {
+  function List() {
     this.list = [];
   };
 
+  List.prototype.showAll = function () {
+    return this.list;
+  }
 
-  exports.NoteList = NoteList;
+  exports.List = List;
 
 })(this);
 
+// var notelist = new this.noteList();
+// console.log(notelist.list.length == 1);
 
-// (function(exports) {
-//   function Note() {
-//     this.text = "My favourite language is JavaScript";
-//   };
-//
-//
-//   Note.prototype.print = function(){
-//     return this.text;
-//   }
-//
-//   exports.Note = Note;
-// })(this);
