@@ -1,16 +1,12 @@
 (function (exports) {
-  function List() {
+  function NoteList() {
     this.list = [];
   };
 
-  List.prototype.showAll = function () {
+
+  NoteList.prototype.getList = function() {
     return this.list;
-  }
+  };
 
-  exports.List = List;
-
+  exports.NoteList = NoteList;
 })(this);
-
-// var notelist = new this.noteList();
-// console.log(notelist.list.length == 1);
-
